@@ -40,10 +40,11 @@ function draw() {
 function mouseReleased(){
   prefire = firework;
   firework++;
-	fireworkFX.play();
+	
 
 	duration = clickTime + 950;
 	if (mouseY > 130){
+		fireworkFX.play();
       if (firework > prefire){
         for (var i = 0; i < 210; i++) {
           sparks[i].x = mouseX;
